@@ -1,0 +1,184 @@
+{
+  "main": {
+    "firstName": "Ankit",
+    "name": "Ankit Tyagi",
+    "occupation": "Web Application Developer",
+    "description": "I've been designing and developing web apps for over 8 years",
+    "image": "ankit-icon.jpg",
+    "bio": "My name is Ankit, I'm a Web Application Developer. I am a Focused, results-oriented and quick-learning Software Engineer with more than 8 years of experience in Web Application Development, and programs working in a variety of environments with a breadth of programs and technologies.",
+    "contactmessage": "Get in touch with me to receive further details.",
+    "email": "tyagi.ankit5256@gmail.com",
+    "phone": "+91 7251846950",
+    "address": {
+      "house": "House no 74",
+      "street": "Shanti Kunj, Rohta Road",
+      "city": "Meerut",
+      "state": "Uttar Pradesh",
+      "country": "India"
+    },   
+    "resumedownload": "https://drive.google.com/uc?id=1XeYvR6hzdPMuIErg9iLJSPFCCr3YNnUk&export=download",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ankit-tyagi-2a5409164/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/tyagiankit1",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "I am well versed in using React.JS as my main Front end tech stack along with Redux.",
+    "education": [
+      {
+        "school": "City Vocational Public School, Meerut, UP",
+        "degree": "STANDARD X / S.S.C",
+        "graduated": "July 2010",
+        "description": "Graduated with 6.6 CGPA."
+      },
+      {
+        "school": "City Vocational Public School, Meerut, UP",
+        "degree": "STANDARD XII / H.S.C",
+        "graduated": "July 2012",
+        "description": "Graduated with 59.2%."
+      },
+      {
+        "school": "Dewan Institution of Technologies, Meerut, UP",
+        "degree": "Bachelor of Computer applications",
+        "graduated": "July 2015",
+        "description": "Graduated with 62.27%."
+      }
+    ],
+    "work": [
+      {
+        "company": "COGNIZANT, Pune",
+        "title": "Web Application Developer & Tech Lead",
+        "years": "October 2023 - Present",
+        "description": "Develop cutting edge FinTech applications for leading insurance company such as Liberty Mutual."
+      },
+      {
+        "company": "Tata Consultancy Services, Noida",
+        "title": "Web Application Developer",
+        "years": "October 2015 - October 2023",
+        "description": "Rapdily build React driven campaign applications for exciting companies such as GE Aerospace, GE Power and Gas and GE Renewables."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "level": "100%"
+      },
+      {
+        "name": "Node.js",
+        "level": "75%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "75%"
+      },
+      {
+        "name": "React JS",
+        "level": "80%"
+      },
+      {
+        "name": "Angular JS",
+        "level": "80%"
+      },
+      {
+        "name": "Angular 2+",
+        "level": "70%"
+      },
+      {
+        "name": "HTML & CSS",
+        "level": "90%"
+      },
+      {
+        "name": "JQuery",
+        "level": "80%"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Fleet Excellence",
+        "description": "It's a dashboard application that must be deployed on another system.",
+        "client": "GE Vernova",
+        "duration": "June 2018 - March 2020",
+        "technologies": ["React JS", "JavaScript", "jQuery", "CSS", "Bootstrap", "Java", "Maven", "Spring Boot", "PostgreSQL"],
+        "responsibilities": [
+          "Independent charts called widgets and some data tables functionality.",
+          "Export as PNG, XLS and CSV functionality in those widgets.",
+          "Fully responsive UI so that application would seamlessly be applied on all kinds of screens."
+        ]
+      },
+      {
+        "title": "Turbine Configuration Management Tool",
+        "description": "It is a tool for monitoring Wind Turbine parameters and analyzing the data.",
+        "client": "GE Vernova",
+        "duration": "October 2020 — January 2022",
+        "technologies": ["Angular 6", "TypeScript", "Node JS", "CSS", "Bootstrap", "Java", "Maven", "Spring Boot", "PostgreSQL"],
+        "responsibilities": [
+          "Independently handled the UI of the application.",
+          "Developed Rest API for the application.",
+          "Handled the Data migration and other Database related activities.",
+          "Created the deployment process and established a smooth deployment for the project."
+        ]
+      },
+      {
+        "title": "Incorporated Changer in Design for Aviation (IncCID)",
+        "description": "It is a tool which aims to notify design changes of parts (CIDs) to shops and suppliers. Shops and suppliers take action to incorporate design changes of parts that are manufactured by them.",
+        "client": "GE Aerospace",
+        "duration": "Feburary 2022 - October 2022",
+        "technologies": ["React JS", "TypeScript", "CSS", "Bootstrap"],
+        "responsibilities": [
+          "Independently handled the UI of the application.",
+          "Created multiple modules.",
+          "Handled Unit testing and production-related issues."
+        ]
+      },
+      {
+        "title": "Angular migration and Development Support",
+        "description": "After Google closes the Support for Angular JS, our client got in contact with XLTS as they are providing their version of Angular JS, I worked on multiple applications which are running in production to migrate them to the XLTS version of Angular JS. I also gave development support to multiple applications which are Live in Production and development are closed.",
+        "client": "GE Aerospace",
+        "duration": "November 2022 - Feburary 2023",
+        "technologies": ["Angular JS", "TypeScript", "CSS", "Bootstrap", "Java"],
+        "responsibilities": [
+          "Independently handled the UI of the application.",
+          "Created multiple modules.",
+          "Handled Unit testing and production-related issues."
+        ]
+      },
+      {
+        "title": "Conformity",
+        "description": "This project is a combination of 4 applications. In which we give production support and work on new features for those applications.",
+        "client": "GE Aerospace",
+        "duration": "Feburary 2023 - October 2023",
+        "technologies": ["Angular JS", "React JS", "TypeScript", "CSS", "Bootstrap", "Java"],
+        "responsibilities": [
+          "Independently handled the UI of all 4 applications and worked on production issues in the backend.",
+          "Created multiple modules."
+        ]
+      },
+      {
+        "title": "Bifrost",
+        "description": "This project is a combination of multiple applications. In which we give production support and work on new features for those applications. The working of the application is majorly to give their users a portal to request and provide access for multiple databases and platforms.",
+        "client": "Liberrty Mutual",
+        "duration": "November 2022 - Feburary 2023",
+        "technologies": ["React JS", "TypeScript", "CSS", "Bootstrap", "Java", "Spring Boot", "AWS SQS"],
+        "responsibilities": [
+          "Independently handled the frontend.",
+          "Created few modules for Backend like creating scheduled jobs for reading AWS SQS messages and processing the data and CURD operations on the Database.",
+          "Worked on the production issues related to the frontend and backend."
+        ]
+      }
+    ]
+  }
+}
