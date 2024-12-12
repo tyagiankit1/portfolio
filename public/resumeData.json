@@ -3,9 +3,9 @@
     "firstName": "Ankit",
     "name": "Ankit Tyagi",
     "occupation": "Web Application Developer",
-    "description": "I've been designing and developing web apps for over 8 years",
+    "description": "I've been designing and developing web apps for over 9 years",
     "image": "ankit-icon.jpg",
-    "bio": "My name is Ankit, I'm a Web Application Developer. I am a Focused, results-oriented and quick-learning Software Engineer with more than 8 years of experience in Web Application Development, and programs working in a variety of environments with a breadth of programs and technologies.",
+    "bio": "Experienced and goal-driven Software engineer with 9+ years of experience in Web Application Development. Proven expertise in programming across diverse environments and technologies. Adept at Rapid skill acquisition and consistently delivering impactful results. Highly skilled in developing efficient and scalable software solutions, with a strong focus on quality and performance. Proficient in Collaborating with cross-functional teams to drive project success. Passionate about leveraging innovative technologies to drive business growth and enhance user experience.",
     "contactmessage": "Get in touch with me to receive further details.",
     "email": "tyagi.ankit5256@gmail.com",
     "phone": "+91 7251846950",
@@ -16,11 +16,11 @@
       "state": "Uttar Pradesh",
       "country": "India"
     },   
-    "resumedownload": "https://drive.google.com/uc?id=1XeYvR6hzdPMuIErg9iLJSPFCCr3YNnUk&export=download",
+    "resumedownload": "https://drive.google.com/uc?id=1GT7-YV8KzeTCyaDa2CE9aVaKTeOQzYI9&export=download",
     "social": [
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/ankit-tyagi-2a5409164/",
+        "url": "https://www.linkedin.com/in/tyagi-ankit5256/",
         "className": "fa fa-linkedin"
       },
       {
@@ -84,23 +84,19 @@
         "level": "80%"
       },
       {
-        "name": "Angular JS",
-        "level": "80%"
-      },
-      {
-        "name": "Angular 2+",
-        "level": "70%"
-      },
-      {
         "name": "HTML & CSS",
         "level": "90%"
       },
       {
+        "name": "Bootstrap",
+        "level": "80%"
+      },
+	  {
         "name": "JQuery",
         "level": "80%"
       },
       {
-        "name": "Bootstrap",
+        "name": "RestAPI Integration",
         "level": "80%"
       }
     ]
@@ -112,11 +108,14 @@
         "description": "It's a dashboard application that must be deployed on another system.",
         "client": "GE Vernova",
         "duration": "June 2018 - March 2020",
-        "technologies": ["React JS", "JavaScript", "jQuery", "CSS", "Bootstrap", "Java", "Maven", "Spring Boot", "PostgreSQL"],
+        "technologies": ["Angular 6", "TypeScript", "Node JS", "CSS", "Bootstrap", "Java", "Maven", "Spring Boot", "PostgreSQL"],
         "responsibilities": [
-          "Independent charts called widgets and some data tables functionality.",
-          "Export as PNG, XLS and CSV functionality in those widgets.",
-          "Fully responsive UI so that application would seamlessly be applied on all kinds of screens."
+          "Independently handled the UI of the application.",
+		 "Worked on production issues and unit testing for the project.",
+		 "Worked on all the new features/enhancements.",
+		 "Worked on the RestAPI integration with UI.",
+		 "Implemented the Export as PNG, XLS and CSV functionality of the charts and Datatables.",
+		 "Occasionally worked on the backend for a few of the Rest APIs."
         ]
       },
       {
@@ -127,9 +126,12 @@
         "technologies": ["Angular 6", "TypeScript", "Node JS", "CSS", "Bootstrap", "Java", "Maven", "Spring Boot", "PostgreSQL"],
         "responsibilities": [
           "Independently handled the UI of the application.",
-          "Developed Rest API for the application.",
-          "Handled the Data migration and other Database related activities.",
-          "Created the deployment process and established a smooth deployment for the project."
+		 "Worked on production issues and unit testing for the project.",
+		 "Worked on all the new features/enhancements.",
+		 "Worked on the RestAPI integration with UI.",
+		 "Handled the data migration and other database-related activities.",
+		 "Created the deployment process and established a smooth deployment for the project.",
+		 "Occasionally worked on the backend for a few of the Rest APIs."
         ]
       },
       {
@@ -140,8 +142,9 @@
         "technologies": ["React JS", "TypeScript", "CSS", "Bootstrap"],
         "responsibilities": [
           "Independently handled the UI of the application.",
-          "Created multiple modules.",
-          "Handled Unit testing and production-related issues."
+		 "Worked on production issues and unit testing for the project.",
+		 "Worked on all the new features/enhancements.",
+		 "Worked on the RestAPI integration."
         ]
       },
       {
@@ -151,9 +154,9 @@
         "duration": "November 2022 - Feburary 2023",
         "technologies": ["Angular JS", "TypeScript", "CSS", "Bootstrap", "Java"],
         "responsibilities": [
-          "Independently handled the UI of the application.",
-          "Created multiple modules.",
-          "Handled Unit testing and production-related issues."
+          "Independently handled the migration Google supported AngularJS to XLTS supported AngularJS.",
+		 "Worked on production issues and unit testing for the project.",
+		 "Worked on all the new features/enhancements."
         ]
       },
       {
@@ -163,8 +166,9 @@
         "duration": "Feburary 2023 - October 2023",
         "technologies": ["Angular JS", "React JS", "TypeScript", "CSS", "Bootstrap", "Java"],
         "responsibilities": [
-          "Independently handled the UI of all 4 applications and worked on production issues in the backend.",
-          "Created multiple modules."
+          "Independently handled the UI for all 4 applications.",
+		 "Worked on production issues and unit testing for the project.",
+		 "Worked on all the new features/enhancements."
         ]
       },
       {
@@ -174,9 +178,10 @@
         "duration": "November 2022 - Feburary 2023",
         "technologies": ["React JS", "TypeScript", "CSS", "Bootstrap", "Java", "Spring Boot", "AWS SQS"],
         "responsibilities": [
-          "Independently handled the frontend.",
-          "Created few modules for Backend like creating scheduled jobs for reading AWS SQS messages and processing the data and CURD operations on the Database.",
-          "Worked on the production issues related to the frontend and backend."
+           "I lead a team of 3-4 teams working from Cognizant, as the project consists of developers from the client side as well.",
+		 "I worked independently as a single front-end resource for the project.",
+		 "These projects consist of a single UI that connects to multiple backend services through RestApis, so I handled all the API integration working with internal team developers and external teams.",
+		 "I occasionally worked on the backend side as well as per the project requirements."
         ]
       }
     ]

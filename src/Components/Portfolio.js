@@ -10,7 +10,7 @@ class Portfolio extends Component {
     }
 
     return (
-      <section id="portfolio">
+      <section id="workHostory">
 
       <div className="row">
 
@@ -18,7 +18,7 @@ class Portfolio extends Component {
 
             <h1>projects I worked on.</h1>
 
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+            <div id="workHostory-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
               <ProjectCard projects={projects}/>
             </div>
           </div>

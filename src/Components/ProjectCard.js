@@ -60,14 +60,15 @@ function projectCard(projects) {
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
               sx={{ width: '100%' }}
             >
-              <Grid xs={6}>
-                <Item><h4>Technologies Used:</h4></Item>
-                { project.technologies.map((technologies) => <Item style={{"font-size": "16px", "margin": "0px", "padding": "0px"}}>{technologies}</Item>) }
+              <Grid xs={1}>
+				  {/*<Item><h4>Technologies Used:</h4></Item>
+				  { project.technologies.map((technologies) => <Item style={{"font-size": "16px", "margin": "0px", "padding": "0px"}}>{technologies}</Item>) }*/}
               </Grid>
-              <Grid xs={6}>
+              <Grid xs={10}>
                 <Item><h4>Responsibilities:</h4></Item>
                 { project.responsibilities.map((responsibilities) => <Item style={{"font-size": "16px", "text-align": "left"}}>{responsibilities}</Item>) }
               </Grid>
+			  <Grid xs={1}></Grid>
             </Grid>
             
           </CardContent>
