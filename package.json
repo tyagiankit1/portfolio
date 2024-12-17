@@ -18,6 +18,10 @@
     "react-scripts": "^5.0.1",
     "swiper": "^11.1.15"
   },
+  "peerDependencies": {
+	"react": "^17.0.0 || ^18.0.0",
+	"react-dom": "^17.0.0 || ^18.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
