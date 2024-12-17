@@ -1,6 +1,24 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import Typography from '@mui/material/Typography';
+
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 
 import { styled } from '@mui/joy/styles';
 import Sheet from '@mui/joy/Sheet';
@@ -8,7 +26,6 @@ import Grid from '@mui/joy/Grid';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import Divider from '@mui/joy/Divider';
-import Typography from '@mui/joy/Typography';
 import Box from '@mui/joy/Box';
 
 
@@ -30,78 +47,115 @@ const Item = styled(Sheet)(({ theme }) => ({
   color: theme.vars.palette.text.secondary,
 }));
 
+const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  '& .MuiDialogContent-root': {
+    padding: theme.spacing(2),
+  },
+  '& .MuiDialogActions-root': {
+    padding: theme.spacing(1),
+  },
+}));
+
 function projectCard(projects) {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('md'));
+
+  const [open, setOpen] = React.useState(false);
+  const [selectedProject, setSelectedProject] = React.useState(null);
+  const [selectedProjectResponsibilities, setselectedProjectResponsibilities] = React.useState(<></>);
+  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+
+  const handleClickOpen = (project) => {
+	setSelectedProject(project)
+	
+	setselectedProjectResponsibilities(project.responsibilities.map((responsibility) =>
+	<li><DialogContentText variant="h6">
+		  >> {responsibility}
+          </DialogContentText></li>
+	
+	) );
+	
+	
+    setOpen(true);
   };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  
   console.log("projects data: ", projects)
   let projectList = <></>;
   if(projects.projects != undefined){
     projectList = projects.projects.map((project) =>
-      <SwiperSlide key={project.title}>
-        <Card>
-          <div>
-            <Typography level="h2" style={{"font-size": "22px"}}>{project.title}</Typography>
-            <Typography level="body-sm">For {project.client}</Typography>
-            <Typography level="body-sm">{project.duration}</Typography>
-          </div>
-          <Divider />
-          <CardContent orientation="horizontal" style={{"display": "block"}}>
-            
-            <Typography level='body-lg' style={{"font-size": "18px", "width": "100%"}}>{project.description}</Typography>
-            <br />
-            <Divider />
-            <Grid
-              container
-              rowSpacing={1}
-              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-              sx={{ width: '100%' }}
-            >
-              <Grid xs={1}>
-				  {/*<Item><h4>Technologies Used:</h4></Item>
-				  { project.technologies.map((technologies) => <Item style={{"font-size": "16px", "margin": "0px", "padding": "0px"}}>{technologies}</Item>) }*/}
-              </Grid>
-              <Grid xs={10}>
-                <Item><h4>Responsibilities:</h4></Item>
-                { project.responsibilities.map((responsibilities) => <Item style={{"font-size": "16px", "text-align": "left"}}>{responsibilities}</Item>) }
-              </Grid>
-			  <Grid xs={1}></Grid>
-            </Grid>
-            
-          </CardContent>
-        </Card>
-      </SwiperSlide>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="h5"
+          color="text.secondary"
+        >
+          {project.duration}
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }} onClick={() => handleClickOpen(project)}>
+          <Typography variant="h4" component="span">
+            {project.title}
+          </Typography>
+  <Typography>{project.role}</Typography>
+        </TimelineContent>
+      </TimelineItem>
+	  
     );
   }
+  
+  
 
   return (
     <>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2400,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
+	<Timeline position={matches?'alternate':'right'}>
+      {projectList}
+    </Timeline>
+	{selectedProject !== null ? 
+	
+	<BootstrapDialog
+        onClose={handleClose}
+        aria-labelledby="customized-dialog-title"
+        open={open}
       >
-        {projectList}
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
-      </Swiper>
+        <DialogTitle sx={{ m: 0, p: 2 }} variant="h3" id="customized-dialog-title">
+          {selectedProject.title}
+        </DialogTitle>
+        <IconButton
+          aria-label="close"
+          onClick={handleClose}
+          sx={(theme) => ({
+            position: 'absolute',
+            right: 8,
+            top: 8,
+            color: theme.palette.grey[500],
+          })}
+        >
+          <CloseIcon />
+        </IconButton>
+	
+        <DialogContent dividers>
+		<DialogContentText  variant="h4"> Overview </DialogContentText>
+          <DialogContentText variant="h6">
+		  {selectedProject.description}
+          </DialogContentText>
+        </DialogContent>
+		
+		<DialogContent dividers>
+		<DialogContentText  variant="h4"> Responsibilities </DialogContentText>
+		<ul>{selectedProjectResponsibilities}</ul>
+        </DialogContent>
+        
+      </BootstrapDialog>
+	: <>< />}
     </>
   );
 }

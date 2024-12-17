@@ -5,7 +5,7 @@
     "occupation": "Web Application Developer",
     "description": "I've been designing and developing web apps for over 9 years",
     "image": "ankit-icon.jpg",
-    "bio": "Experienced and goal-driven Software engineer with 9+ years of experience in Web Application Development. Proven expertise in programming across diverse environments and technologies. Adept at Rapid skill acquisition and consistently delivering impactful results. Highly skilled in developing efficient and scalable software solutions, with a strong focus on quality and performance. Proficient in Collaborating with cross-functional teams to drive project success. Passionate about leveraging innovative technologies to drive business growth and enhance user experience.",
+    "bio": "Experienced and goal-oriented. Software engineer with over 9 years of expertise in web application development. Proven experience developing in a variety of settings and technologies. Capable of quickly learning new skills and consistently delivering effective results. Highly competent in creating efficient and scalable software solutions, with a strong emphasis on quality and performance. Proficient in working with cross-functional teams to ensure project success. Passionate about using innovative technology to drive business growth and improve user experience.",
     "contactmessage": "Get in touch with me to receive further details.",
     "email": "tyagi.ankit5256@gmail.com",
     "phone": "+91 7251846950",
@@ -16,7 +16,7 @@
       "state": "Uttar Pradesh",
       "country": "India"
     },   
-    "resumedownload": "https://drive.google.com/uc?id=1GT7-YV8KzeTCyaDa2CE9aVaKTeOQzYI9&export=download",
+    "resumedownload": "https://drive.google.com/uc?id=1-XRCNMArBas2fCb2dzc7YvNSrjLlN8ZA&export=download",
     "social": [
       {
         "name": "linkedin",
@@ -104,84 +104,96 @@
   "portfolio": {
     "projects": [
       {
+		"key": 1,
         "title": "Fleet Excellence",
         "description": "It's a dashboard application that must be deployed on another system.",
         "client": "GE Vernova",
-        "duration": "June 2018 - March 2020",
+        "duration": "Jun 2018 - Mar 2020",
+		"role": "Technical Lead & Front-End Developer",
         "technologies": ["Angular 6", "TypeScript", "Node JS", "CSS", "Bootstrap", "Java", "Maven", "Spring Boot", "PostgreSQL"],
         "responsibilities": [
-          "Independently handled the UI of the application.",
-		 "Worked on production issues and unit testing for the project.",
-		 "Worked on all the new features/enhancements.",
-		 "Worked on the RestAPI integration with UI.",
-		 "Implemented the Export as PNG, XLS and CSV functionality of the charts and Datatables.",
-		 "Occasionally worked on the backend for a few of the Rest APIs."
+            "I was the front-end technical lead and front-end developer for the team.",
+			"I worked on production issues and unit testing for the project.",
+			"I worked on all the new features and enhancements.",
+			"Worked on the RestAPI integration with UI.",
+			"Implemented the Export as PNG, XLS, and CSV functionality of the charts and datatables.",
+			"Occasionally worked on the backend for a few of the Rest APIs."
         ]
       },
       {
+        "key": 2,
         "title": "Turbine Configuration Management Tool",
         "description": "It is a tool for monitoring Wind Turbine parameters and analyzing the data.",
         "client": "GE Vernova",
-        "duration": "October 2020 — January 2022",
+        "duration": "Oct 2020 — Jan 2022",
+		"role": "Front-End Developer",
         "technologies": ["Angular 6", "TypeScript", "Node JS", "CSS", "Bootstrap", "Java", "Maven", "Spring Boot", "PostgreSQL"],
         "responsibilities": [
-          "Independently handled the UI of the application.",
-		 "Worked on production issues and unit testing for the project.",
-		 "Worked on all the new features/enhancements.",
-		 "Worked on the RestAPI integration with UI.",
-		 "Handled the data migration and other database-related activities.",
-		 "Created the deployment process and established a smooth deployment for the project.",
-		 "Occasionally worked on the backend for a few of the Rest APIs."
+            "Independently handled the UI of the application.",
+			"I worked on production issues and unit testing for the project.",
+			"I worked on all the new features and enhancements.",
+			"Worked on the RestAPI integration with UI.",
+			"Handled the data migration and other database-related activities.",
+			"Created the deployment process and established a smooth deployment for the project.",
+			"Occasionally worked on the backend for a few of the Rest APIs"
         ]
       },
       {
+        "key": 3,
         "title": "Incorporated Changer in Design for Aviation (IncCID)",
         "description": "It is a tool which aims to notify design changes of parts (CIDs) to shops and suppliers. Shops and suppliers take action to incorporate design changes of parts that are manufactured by them.",
         "client": "GE Aerospace",
-        "duration": "Feburary 2022 - October 2022",
+        "duration": "Feb 2022 - Oct 2022",
+		"role": "Front-End Developer",
         "technologies": ["React JS", "TypeScript", "CSS", "Bootstrap"],
         "responsibilities": [
-          "Independently handled the UI of the application.",
-		 "Worked on production issues and unit testing for the project.",
-		 "Worked on all the new features/enhancements.",
-		 "Worked on the RestAPI integration."
+            "Independently handled the UI of the application.",
+			"I worked on production issues and unit testing for the project.",
+			"I worked on all the new features and enhancements.",
+			"I worked on the RestAPI integration."
         ]
       },
       {
+        "key": 4,
         "title": "Angular migration and Development Support",
         "description": "After Google closes the Support for Angular JS, our client got in contact with XLTS as they are providing their version of Angular JS, I worked on multiple applications which are running in production to migrate them to the XLTS version of Angular JS. I also gave development support to multiple applications which are Live in Production and development are closed.",
         "client": "GE Aerospace",
-        "duration": "November 2022 - Feburary 2023",
+        "duration": "Nov 2022 - Feb 2023",
+		"role": "Front-End Developer",
         "technologies": ["Angular JS", "TypeScript", "CSS", "Bootstrap", "Java"],
         "responsibilities": [
-          "Independently handled the migration Google supported AngularJS to XLTS supported AngularJS.",
-		 "Worked on production issues and unit testing for the project.",
-		 "Worked on all the new features/enhancements."
+            "Independently handling the migration, Google supported AngularJS to XLTS.",
+			"I worked on production issues and unit testing for the project.",
+			"I worked on all the new features and enhancements."
         ]
       },
       {
+        "key": 5,
         "title": "Conformity",
         "description": "This project is a combination of 4 applications. In which we give production support and work on new features for those applications.",
         "client": "GE Aerospace",
-        "duration": "Feburary 2023 - October 2023",
+        "duration": "Feb 2023 - Oct 2023",
+		"role": "Front-End Developer",
         "technologies": ["Angular JS", "React JS", "TypeScript", "CSS", "Bootstrap", "Java"],
         "responsibilities": [
-          "Independently handled the UI for all 4 applications.",
-		 "Worked on production issues and unit testing for the project.",
-		 "Worked on all the new features/enhancements."
+            "Independently handled the UI for all 4 applications.",
+			"I worked on production issues and unit testing for the project.",
+			"I worked on all the new features and enhancements."
         ]
       },
       {
+        "key": 6,
         "title": "Bifrost",
         "description": "This project is a combination of multiple applications. In which we give production support and work on new features for those applications. The working of the application is majorly to give their users a portal to request and provide access for multiple databases and platforms.",
         "client": "Liberrty Mutual",
-        "duration": "November 2022 - Feburary 2023",
+        "duration": "Nov 2022 - Feb 2023",
+		"role": "Team Lead & Front-End Developer",
         "technologies": ["React JS", "TypeScript", "CSS", "Bootstrap", "Java", "Spring Boot", "AWS SQS"],
         "responsibilities": [
-           "I lead a team of 3-4 teams working from Cognizant, as the project consists of developers from the client side as well.",
-		 "I worked independently as a single front-end resource for the project.",
-		 "These projects consist of a single UI that connects to multiple backend services through RestApis, so I handled all the API integration working with internal team developers and external teams.",
-		 "I occasionally worked on the backend side as well as per the project requirements."
+            "I lead a team of 3-4 members working from Cognizant, as the project also consists of developers from the client side.",
+			"I worked independently as a single front-end resource for the project.",
+			"These projects consist of a single UI that connects to multiple backend services through RestApis, so I handled all the API integration working with internal team developers and external teams.",
+			"I occasionally worked on the backend side as well as per the project requirements."
         ]
       }
     ]

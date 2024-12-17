@@ -221,7 +221,7 @@ ul#nav li a:active {
   background-color: transparent !important;
 }
 ul#nav li.current a {
-  color: #0F9095;
+  color: #44CCFF;
 }
 
 /* ------------------------------------------------------------------ */
@@ -232,7 +232,6 @@ ul#nav li.current a {
   /* background: #2b2b2b; */
   background: white;
   padding-top: 96px;
-  padding-bottom: 66px;
   overflow: hidden;
 }
 
@@ -292,9 +291,12 @@ ul#nav li.current a {
 
 #education {
   background: #fff;
-  padding-top: 90px;
-  padding-bottom: 72px;
   overflow: hidden;
+  padding-top: 96px;
+}
+
+#experiance {
+  padding-top: 96px;
 }
 
 #education a,
@@ -489,7 +491,6 @@ ul#nav li.current a {
 #workHostory {
   background: #ebeeee;
   padding-top: 90px;
-  padding-bottom: 60px;
 }
 #workHostory h1 {
   font: 15px/24px 'opensans-semibold', sans-serif;
