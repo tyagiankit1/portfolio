@@ -20,41 +20,7 @@ import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
-import { styled } from '@mui/joy/styles';
-import Sheet from '@mui/joy/Sheet';
-import Grid from '@mui/joy/Grid';
-import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
-import Divider from '@mui/joy/Divider';
-import Box from '@mui/joy/Box';
 
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-const Item = styled(Sheet)(({ theme }) => ({
-  backgroundColor:
-    theme.palette.mode === 'dark' ? theme.palette.background.level1 : '#fff',
-  ...theme.typography['body-sm'],
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  borderRadius: 4,
-  color: theme.vars.palette.text.secondary,
-}));
-
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
-    padding: theme.spacing(2),
-  },
-  '& .MuiDialogActions-root': {
-    padding: theme.spacing(1),
-  },
-}));
 
 function projectCard(projects) {
   const theme = useTheme();
@@ -121,7 +87,7 @@ function projectCard(projects) {
     </Timeline>
 	{selectedProject !== null ? 
 	
-	<BootstrapDialog
+	<Dialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
@@ -154,7 +120,7 @@ function projectCard(projects) {
 		<ul>{selectedProjectResponsibilities}</ul>
         </DialogContent>
         
-      </BootstrapDialog>
+      </Dialog>
 	: <>< />}
     </>
   );

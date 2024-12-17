@@ -6,7 +6,6 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.2.0",
-    "@mui/joy": "^5.0.0-beta.50",
     "@mui/lab": "^6.0.0-beta.19",
     "@mui/material": "^6.2.0",
     "ajv": "^8.17.1",
@@ -14,12 +13,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-ga": "^3.3.1",
-    "react-scripts": "^5.0.1",
-    "swiper": "^11.1.15"
-  },
-  "peerDependencies": {
-	"react": "^16.8.0 || ^17.0.0",
-	"react-dom": "^16.8.0 || ^17.0.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
