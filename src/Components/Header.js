@@ -64,7 +64,7 @@ class Header extends Component {
 			</li>
 			<li>
 				<a className='smoothscroll' href='#experiance'>
-                Experiance
+                Experience
               </a>
 			</li>
 			<li>
@@ -86,7 +86,7 @@ class Header extends Component {
 					  style={{marginLeft: '25%'}}
 					  sx={{ width: 200, height: 200 }}
 					/> : <></>}
-					<h2 className='responsive-headline' style={{color: '#fff'}}>Hi, I'M </h2>
+					<h2 className='responsive-headline' style={{color: '#fff'}}>Hi, I Am </h2>
 					<h1 className='responsive-headline'>{name}</h1>
 					<h5 className='responsive-headline' style={{color: '#fff'}}>with</h5>
 					<Grid container spacing={2}>
@@ -94,7 +94,7 @@ class Header extends Component {
 							<h2 className='responsive-headline' style={{color: '#fff', textAlign:'right' }}>9+</h2>
 						</Grid>
 						<Grid item xs={8} className='heroUserData'>
-							<h4 className='responsive-headline' style={{color: '#fff', textAlign:'left' }}>Years of Experinse in Web development</h4>
+							<h4 className='responsive-headline' style={{color: '#fff', textAlign:'left' }}>Years of Experience in Web development</h4>
 						</Grid>
 					</Grid>
 					<Grid container spacing={2}>
